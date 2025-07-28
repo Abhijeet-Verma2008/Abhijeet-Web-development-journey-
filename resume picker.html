@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Input Form Project</title>
+</head>
+<body>
+
+  <h2>👤 यूज़र रजिस्ट्रेशन फॉर्म</h2>
+
+  <form>
+    <!-- 1. Text Input -->
+    <label for="name">नाम:</label><br>
+    <input type="text" id="name" name="username" placeholder="अपना नाम लिखें"><br><br>
+
+    <!-- 2. Password Input -->
+    <label for="password">पासवर्ड:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <!-- 3. Email Input -->
+    <label for="email">ईमेल:</label><br>
+    <input type="email" id="email" name="email" placeholder="abc@example.com"><br><br>
+
+    <!-- 4. Number Input -->
+    <label for="age">उम्र:</label><br>
+    <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+    <!-- 5. Date Input -->
+    <label for="dob">जन्म तिथि:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <!-- 6. Checkbox -->
+    <label>
+      <input type="checkbox" name="html"> क्या आपने HTML सीख लिया है?
+    </label><br><br>
+
+    <!-- 7. Radio Buttons -->
+    <label>पसंदीदा भाषा:</label><br>
+    <label>
+      <input type="radio" name="language" value="HTML"> HTML
+    </label>
+    <label>
+      <input type="radio" name="language" value="CSS"> CSS
+    </label><br><br>
+
+    <!-- 8. File Upload -->
+    <label for="resume">अपना रिज़्यूमे अपलोड करें:</label><br>
+    <input type="file" id="resume" name="resume"><br><br>
+
+    <!-- 9. Submit Button -->
+    <input type="submit" value="फॉर्म सबमिट करें">  
+
+    <!-- 10. Reset Button -->
+    <input type="reset" value="फॉर्म रीसेट करें">
+  </form>
+
+</body>
+</html>
