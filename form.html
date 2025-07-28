@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>पंजीकरण फॉर्म</title>
+</head>
+<body>
+  <h2>📝 पंजीकरण फॉर्म</h2>
+
+  <form action="#" method="post">
+    
+    <!-- नाम -->
+    <label for="name">पूरा नाम:</label><br>
+    <input type="text" id="name" name="name" placeholder="अपना नाम लिखें"><br><br>
+
+    <!-- जेंडर -->
+    <label>लिंग:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">पुरुष</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">महिला</label><br><br>
+
+    <!-- हॉबी -->
+    <label>हॉबी:</label><br>
+    <input type="checkbox" id="music" name="hobby" value="music">
+    <label for="music">🎵 म्यूज़िक</label>
+    <input type="checkbox" id="sports" name="hobby" value="sports">
+    <label for="sports">🏏 खेल</label>
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">📚 पढ़ना</label><br><br>
+
+    <!-- शहर -->
+    <label for="city">शहर चुनें:</label><br>
+    <select id="city" name="city">
+      <option value="delhi">दिल्ली</option>
+      <option value="lucknow">लखनऊ</option>
+      <option value="mumbai">मुंबई</option>
+    </select><br><br>
+
+    <!-- मैसेज -->
+    <label for="message">कोई संदेश:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30" placeholder="यहाँ लिखें..."></textarea><br><br>
+
+    <!-- सबमिट बटन -->
+    <input type="submit" value="सबमिट करें">
+
+  </form>
+</body>
+</html>
