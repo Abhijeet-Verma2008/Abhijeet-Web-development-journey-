@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced HTML Form</title>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form autocomplete="off" action="/submit-form" method="post">
+
+    <!-- Hidden ID -->
+    <input type="hidden" name="userID" value="12345">
+
+    <!-- Fieldset 1: Personal Info -->
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label>Full Name:</label><br>
+      <input type="text" name="name" placeholder="Apna naam likhiye" required><br><br>
+
+      <label>Age:</label><br>
+      <input type="number" name="age" min="10" max="100"><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" name="email" placeholder="abc@example.com" required><br><br>
+
+      <label>Phone:</label><br>
+      <input type="tel" name="phone" placeholder="1234567890" maxlength="10"><br><br>
+    </fieldset>
+
+    <!-- Fieldset 2: Preferences -->
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <label>Favorite Language:</label><br>
+      <input list="languages" name="language" placeholder="Choose from list"><br>
+      <datalist id="languages">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+        <option value="Python">
+      </datalist><br>
+
+      <label>Feedback:</label><br>
+      <textarea name="feedback" rows="4" cols="40" placeholder="Apna feedback likhiye..."></textarea><br><br>
+
+      <label>Your Country:</label>
+      <select name="country">
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+      </select><br><br>
+    </fieldset>
+
+    <!-- Read-only & Disabled -->
+    <label>Referral Code (readonly):</label>
+    <input type="text" value="REF2025" readonly><br><br>
+
+    <label>Coupon Code (disabled):</label>
+    <input type="text" value="OFFER50" disabled><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register Now">
+
+  </form>
+
+</body>
+</html>
