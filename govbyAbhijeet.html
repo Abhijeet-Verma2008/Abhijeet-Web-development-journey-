@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form - All Input Types</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f5f5f5;
+    }
+    h2 {
+      text-align: center;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      padding: 8px;
+      margin-top: 5px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      margin-top: 20px;
+      background: green;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <h2>Registration Form - All Input Types</h2>
+  <form>
+
+    <!-- Text Inputs -->
+    <label>Full Name:</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Username:</label>
+    <input type="text" placeholder="Enter username">
+
+    <!-- Password -->
+    <label>Password:</label>
+    <input type="password" placeholder="Enter password">
+
+    <!-- Email -->
+    <label>Email:</label>
+    <input type="email" placeholder="Enter email">
+
+    <!-- Number -->
+    <label>Age:</label>
+    <input type="number" min="1" max="100">
+
+    <!-- Telephone -->
+    <label>Phone:</label>
+    <input type="tel" placeholder="9876543210">
+
+    <!-- URL -->
+    <label>Website:</label>
+    <input type="url" placeholder="https://example.com">
+
+    <!-- Search -->
+    <label>Search:</label>
+    <input type="search" placeholder="Search here...">
+
+    <!-- Color -->
+    <label>Favourite Color:</label>
+    <input type="color">
+
+    <!-- Date/Time Inputs -->
+    <label>Date of Birth:</label>
+    <input type="date">
+
+    <label>Choose Month:</label>
+    <input type="month">
+
+    <label>Choose Week:</label>
+    <input type="week">
+
+    <label>Choose Time:</label>
+    <input type="time">
+
+    <label>Date and Time:</label>
+    <input type="datetime-local">
+
+    <!-- File Upload -->
+    <label>Upload Profile Picture:</label>
+    <input type="file">
+
+    <!-- Radio Buttons -->
+    <label>Gender:</label>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <input type="radio" name="gender"> Other
+
+    <!-- Checkbox -->
+    <label>Hobbies:</label>
+    <input type="checkbox"> Reading
+    <input type="checkbox"> Music
+    <input type="checkbox"> Sports
+
+    <!-- Range -->
+    <label>Skill Level (1-10):</label>
+    <input type="range" min="1" max="10">
+
+    <!-- Hidden Field -->
+    <input type="hidden" value="hidden_value">
+
+    <!-- Image as button -->
+    <label>Image Button:</label>
+    <input type="image" src="https://via.placeholder.com/100" alt="Submit">
+
+    <!-- Reset & Submit -->
+    <input type="reset" value="Reset Form" class="btn">
+    <input type="submit" value="Submit Form" class="btn">
+
+  </form>
+</body>
+</html>
