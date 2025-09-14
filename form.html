@@ -1,49 +1,98 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>पंजीकरण फॉर्म</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+     body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f1c2e;
+      font-family: Arial, Sans-Serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    } 
+     .circle-wrapper {
+      position: relative;
+      height: 320px;
+      width: 320px;
+    } 
+    .rotating-border { 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: conic-gradient(#00f5ff 0deg, #0f1c2e 40deg, #0f1c2e 260deg );
+      animation: spin 4s linear infinite;
+      z-index: 1;
+    }
+     @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    } 
+     .login-box { 
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 290px;
+      height: 290px;
+      background: #131e32;
+      border-radius: 50%;
+      padding: 30px 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      z-index: 2;    form upar rahe 
+    }
+    .login-box input, .login-box button {
+      margin: 8px 0;
+      padding: 10px;
+      width: 80%;
+      border: none;
+      border-radius: 5px;
+    }
+     .login-box button {
+      background: #00f5ff;
+      cursor: pointer;
+    } 
+     .login-box a { 
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #00f5ff;
+      text-decoration: none;
+    } 
+  </style>
 </head>
 <body>
-  <h2>📝 पंजीकरण फॉर्म</h2>
+  <div class="circle-wrapper">
+    <div class="rotating-border"></div>
 
-  <form action="#" method="post">
-    
-    <!-- नाम -->
-    <label for="name">पूरा नाम:</label><br>
-    <input type="text" id="name" name="name" placeholder="अपना नाम लिखें"><br><br>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Email" required><br>
+        <input type="password" placeholder="Password" required><br>
+        <a href="#" class="forget">Forget your Password?</a>
+        <button type="submit">Login</button>
+        <a href="#" class="signup">Signup</a>
+      </form>
+    </div>
 
-    <!-- जेंडर -->
-    <label>लिंग:</label><br>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">पुरुष</label>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">महिला</label><br><br>
-
-    <!-- हॉबी -->
-    <label>हॉबी:</label><br>
-    <input type="checkbox" id="music" name="hobby" value="music">
-    <label for="music">🎵 म्यूज़िक</label>
-    <input type="checkbox" id="sports" name="hobby" value="sports">
-    <label for="sports">🏏 खेल</label>
-    <input type="checkbox" id="reading" name="hobby" value="reading">
-    <label for="reading">📚 पढ़ना</label><br><br>
-
-    <!-- शहर -->
-    <label for="city">शहर चुनें:</label><br>
-    <select id="city" name="city">
-      <option value="delhi">दिल्ली</option>
-      <option value="lucknow">लखनऊ</option>
-      <option value="mumbai">मुंबई</option>
-    </select><br><br>
-
-    <!-- मैसेज -->
-    <label for="message">कोई संदेश:</label><br>
-    <textarea id="message" name="message" rows="4" cols="30" placeholder="यहाँ लिखें..."></textarea><br><br>
-
-    <!-- सबमिट बटन -->
-    <input type="submit" value="सबमिट करें">
-
-  </form>
+  </div>
 </body>
 </html>

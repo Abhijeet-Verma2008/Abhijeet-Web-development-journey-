@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Government document</title>
+  <style>
+  h2 {
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <h2>Government form.</h2>
+  <form action="submit.php" method="post">
+    <label for="name">Full name:</label>
+    <input type="text" id="name" name="fullname" placeholder="Enter your full name"><br><br> 
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" placeholder="Enter your age:"><br><br>
+    <label for="mobile number">Number:</label>
+    <input type="tel" id="mobile Number" name="mobile number" placeholder="Enter your mobile number"><br><br>
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website name" placeholder="Enter your website url"><br><br>
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search" placeholder="Search here....."><br><br>
+    <label for="favcolor">Favourite colour:</label>
+    <input type="color" id="favcolor" name="favouritecolor"><br><br>
+    <label for="dob">Date of birth:</label>
+    <input type="date" id="dob" name="date of birth"><br><br>
+    <label for="month">Choose month:</label>
+    <input type="month" id="month" name="month" placeholder="Select your month"><br><br>
+    <label for="week">Choose week:</label>
+    <input type="week" id="week" name="week"><br><br>
+    <label for="time">Select time:</label>
+    <input type="time" id="time" name="time"><br><br>
+    <label for="dateandtime">Date and time:</label>
+    <input type="datetime-local" id="dateandtime" name="dateandtime"><br><br>
+    <label for="uploadfile">Upload file:</labe><br>
+  <input type="file"><br><br>
+  <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="Gender" value="male">
+  <label for="male">Male</label>
+<input type="radio" id="female" name="Gender" value="Female">
+ <label for="female">Gender</label><br><br>
+  <label>Hobbies:</label><br>
+ <input type="checkbox" id="reading" name="hobby" value="reading">
+ <label for="reading">Reading</label>
+ <input type="checkbox" id="traveling" name="hobby" value="traveling">
+ <label for="traveling">Traveling</label><br><br>
+ <label for="country">Country:</label>
+ <select id="country" name="country">
+   <option value="select">Select</option>
+   <option value="india">India</option>
+   <option value="usa">USA</option>
+   <option value="canada">Canada</option>
+ </select><br><br>
+ <label for="skillevel">Skill level (1-10):</label>
+ <input type="range" min="1" max="10"><br><br>
+ <input type="submit" value="Submit form">
+ <input type="reset" value="Reset form">
+  </form>
+</body>
+</html>
